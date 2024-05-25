@@ -63,8 +63,8 @@ hr {
 .toggle-button {
   z-index: 2;
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 5%;
+  right: 5%;
   cursor: pointer;
   background: none;
   border: none;
@@ -116,4 +116,11 @@ a {
   align-items: center;
   justify-content: center;
   padding: 0px;
+}
+
+/* Отключение :hover эффектов на мобильных устройствах */
+@media (hover: none) {
+  .hover-effect {
+    pointer-events: none; /* Отключить события указателя */
+  }
 }
