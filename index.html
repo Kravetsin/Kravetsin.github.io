@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="images/ico.png" type="">
-    <title>Overdose</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link id="theme-style" rel="stylesheet" href="/styles/light.css">
+  <link rel="stylesheet" href="styles/header.css">
 </head>
 <body>
-    <header>
+  <div id="loader">
+    <div class="loader-icon"></div>
+  </div>
 
+  <div class="content">
+    <button id="theme-toggle" class="toggle-button">
+      <span class="icon sun">☀️</span>
+      <span class="icon moon" style="opacity: 0;">🌙</span>
+    </button>
+
+    <header id="header">
+      <h1>My Resume</h1>
     </header>
-    <audio id="myAudio" src="audio/-blin-zachem-ya-syuda-prishel.mp3"></audio>
-    <button onclick="document.getElementById('myAudio').play()">ПРОЧИТАТЬ МЫСЛИ</button>
-    <img src="images/scale_1200.jpg" alt="">
+    <hr>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, my name is <strong>Igor Kravets</strong> and I'm a self-taught front-end developer.</p>
+    </section>
+
+    <hr>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <a href="#">LINKS</a>
+      <p>This is the experience section.</p>
+    </section>
+
+    <hr>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>This is the skills section.</p>
+    </section>
+
+    <hr>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>This is the portfolio section.</p>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>This is the contact section.</p>
+    </section>
+  </div>
+
+  <div>
+    <a class="go-up" href="#header">⬆️</a>
+  </div>
+
+  <script src="/scripts/theme-toggle.js"></script>
+  <script src="/scripts/loader.js"></script>
+  <script src="scripts/header.js"></script>
 </body>
 </html>

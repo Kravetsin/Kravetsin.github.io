@@ -1,0 +1,119 @@
+/* Основные стили */
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: monospace;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+hr {
+  margin: 0px;
+}
+
+/* Loader styles */
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-icon {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide content initially */
+.content {
+  display: none;
+}
+
+.toggle-button {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: font-size 0.4s ease;
+}
+
+.icon {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.sun {
+  position: absolute;
+}
+
+.moon {
+  position: absolute;
+  transform: rotate(360deg);
+}
+
+.moon:hover{
+  font-size: 50px;
+  transition: 0.4s ease;
+}
+
+.toggle-button:hover{
+  font-size: 50px;
+  transition: 0.4s ease;
+}
+
+a {
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.go-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
