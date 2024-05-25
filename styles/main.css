@@ -118,9 +118,8 @@ a {
   padding: 0px;
 }
 
-/* Отключение :hover эффектов на мобильных устройствах */
-@media (hover: none) {
-  .hover-effect {
-    pointer-events: none; /* Отключить события указателя */
-  }
+/* Отключение hover на мобильных устройствах */
+.touch-device .my-element:hover {
+  /* Ваш стиль */
+  pointer-events: none;
 }
