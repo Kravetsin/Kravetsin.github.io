@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const currentTheme = localStorage.getItem('theme') || 'light'
 	themeStyle.setAttribute(
 		'href',
-		`/Kravetsin.github.io/styles/${currentTheme}.css`
+		`/styles/${currentTheme}.css`
 	)
 	sunIcon.style.opacity = currentTheme === 'dark' ? 0 : 1
 	sunIcon.style.transform =
@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	themeToggleButton.addEventListener('click', () => {
 		const theme =
-			themeStyle.getAttribute('href') === '/Kravetsin.github.io/styles/light.css'
+			themeStyle.getAttribute('href') === '/styles/light.css'
 				? 'dark'
 				: 'light'
-		themeStyle.setAttribute('href', `/Kravetsin.github.io/styles/${theme}.css`)
+		themeStyle.setAttribute('href', `/styles/${theme}.css`)
 		localStorage.setItem('theme', theme)
 
 		sunIcon.style.opacity = theme === 'dark' ? 0 : 1
