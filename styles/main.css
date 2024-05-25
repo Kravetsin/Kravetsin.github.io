@@ -63,8 +63,8 @@ hr {
 .toggle-button {
   z-index: 2;
   position: absolute;
-  top: 20px;
-  right: 25px;
+  top: 40px;
+  right: 40px;
   cursor: pointer;
   background: none;
   border: none;
