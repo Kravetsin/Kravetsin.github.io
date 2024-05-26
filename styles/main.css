@@ -68,6 +68,7 @@ hr {
   cursor: pointer;
   background: none;
   border: none;
+  border-radius: 50%;
   font-size: 35px;
   display: flex;
   align-items: center;
@@ -122,4 +123,82 @@ a {
 .touch-device .my-element:hover {
   /* Ваш стиль */
   pointer-events: none;
+}
+
+/* Стили для анимации появления секций */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+} */
+
+.section.visible {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes blink {
+  0%, 100% {
+    box-shadow: 10px 7px 15px white ;
+  }
+  50% {
+    box-shadow: 10px 10px 15px ;
+  }
+}
+
+.blinking-button {
+  animation: blink 2s infinite;
+}
+
+.lang-button {
+  z-index: 2;
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  color: rgb(36, 39, 41);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 20%;
+  animation: lang-blink 5s infinite;
+}
+
+@keyframes lang-blink {
+  0%, 100% {
+    background-color: rgba(255, 255, 255, 0.404);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.445);
+  }
+}
+
+.lang-button:hover {
+  animation: lang-blink none;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Переход для плавной смены текста */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }

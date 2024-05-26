@@ -1,0 +1,23 @@
+.resume {
+  letter-spacing: 20px;
+  animation: resume 3s infinite;
+}
+
+@keyframes resume {
+  0% {
+    text-shadow: 2px 0px 0px purple;
+  }
+  4% {
+    text-shadow: -2px 0px 0px red;
+  }
+  8%{
+    text-shadow: 2px 0px 0px purple;
+  }
+  12% {
+    text-shadow: 0px 0px 0px;
+  }
+  100% {
+
+  }
+}
+

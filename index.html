@@ -14,47 +14,64 @@
   </div>
 
   <div class="content">
-    <button id="theme-toggle" class="toggle-button">
+    <button id="theme-toggle" class="toggle-button blinking-button">
       <span class="icon sun">☀️</span>
       <span class="icon moon" style="opacity: 0;">🌙</span>
     </button>
 
+    <button id="lang-toggle" class="lang-button">EN</button>
+
     <header id="header">
-      <h1>My Resume</h1>
+      <h1 class="resume hover-effect" data-en="My Resume" data-de="Lebenslauf">My Resume</h1>
     </header>
     <hr>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi, my name is <strong>Igor Kravets</strong> and I'm a self-taught front-end developer.</p>
+    <section id="about" class="section">
+      <h2 class="hover-effect" data-en="About Me" data-de="Über mich">About Me</h2>
+      <p class="hover-effect"><span data-en="Hi, my name is " data-de="Hallo, mein Name ist ">Hi, my name is </span><strong>Igor Kravets</strong><span data-en=" and I'm a self-taught front-end developer." data-de=" und ich bin ein autodidaktischer Front-End-Entwickler."> and I'm a self-taught front-end developer.</span></p>
     </section>
 
     <hr>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <a href="#">LINKS</a>
-      <p>This is the experience section.</p>
+    <section id="experience" class="section">
+      <h2 class="hover-effect" data-en="Experience" data-de="Erfahrung">Experience</h2>
+      <p>2022 - 2023 (HTML, CSS)</p>
+        <li class="hover-effect" data-en="Learning the basics of programming languages." data-de="Erlernen der Grundlagen von Programmiersprache">Learning the basics of programming languages.</li>
+        <li class="hover-effect" data-en="Creation of a website." data-de="Erstellung einer Website.">Creation of a website.</li>
+      <p class="hover-effect">2023 - <span data-en="Today" data-de="Heute">Today</span>  (JavaScript, Python)</p>
+        <li class="hover-effect"><span data-en="Framework" data-de="Rahmenwerk">Framework</span>  - Django</li>
+        <li class="hover-effect"><span data-en="Library" data-de="Bibliothek">Library</span>  - ReactJS</li>
     </section>
 
     <hr>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>This is the skills section.</p>
+    <section id="skills" class="section">
+      <h2 class="hover-effect" data-en="Knowledge and interests" data-de="Kenntnisse und interessen">Knowledge and interests</h2>
+      <p class="hover-effect"><span data-en="Programming language: " data-de="Programmiersprache: ">Programming language: </span>HTML, CSS, JavaScript, Python.</p>
+      <p class="hover-effect" data-en="Languages: German - A2; English - B2; Ukrainian/Russian - Mother tongue." data-de="Sprachen: Deutsch - A2; Englisch - B2;
+      Ukrainisch/Russisch - Muttersprache.">Languages: German - A2; English - B2; Ukrainian/Russian - Mother tongue.</p>
     </section>
 
     <hr>
 
-    <section id="portfolio">
+    <section id="portfolio" class="section">
       <h2>Portfolio</h2>
-      <p>This is the portfolio section.</p>
+      <a href="https://github.com/Kravetsin" target="_blank">GitHub</a>
     </section>
 
     <hr>
 
-    <section id="contact">
+    <section id="portfolio" class="section">
+      <h2>Hobby</h2>
+      <p class="hover-effect" data-en="Making music, programming, building computers." data-de="Musik machen, Programmierung, Computer bauen.">Making music, programming, building computers.</p>
+    </section>
+
+    <hr>
+
+    <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>This is the contact section.</p>
+      <p>➤ Goldbergstr. 1, 35043 Marburg</p>
+      <p>✉︎ kravets.inside@gmail.com</p>
+      <p>✆ 016091497274</p>
     </section>
   </div>
 
@@ -66,5 +83,6 @@
   <script src="/scripts/loader.js"></script>
   <script src="/scripts/header.js"></script>
   <script src="/scripts/touch.js"></script>
+  <script src="/scripts/lang-toggle.js"></script>
 </body>
 </html>
