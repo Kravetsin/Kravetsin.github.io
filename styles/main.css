@@ -106,6 +106,7 @@ a {
 }
 
 .go-up {
+  opacity: 0.5;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -137,11 +138,13 @@ a {
   }
 }
 
-/* .section {
+.section {
   opacity: 0;
+  margin-left: 5%;
+  margin-right: 5%;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
-} */
+}
 
 .section.visible {
   animation: fadeIn 0.5s forwards;
@@ -201,4 +204,69 @@ a {
 .fade-in {
   opacity: 1;
   transition: opacity 0.3s ease-in;
+}
+
+/* Модальное окно (скрыто по умолчанию) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Модальное содержание */
+.modal-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 5px;
+  width: 80%;
+  max-width: 600px;
+  background-color: #00000067;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Кнопка закрытия модального окна */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #aaa;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Фото в модальном окне */
+.modal-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.photo-button {
+  z-index: 2;
+  position: absolute;
+  color: rgb(36, 39, 41);
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.315);
+  border: none;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
 }

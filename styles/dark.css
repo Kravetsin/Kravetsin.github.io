@@ -85,3 +85,7 @@ a:hover {
   opacity: 0.5s;
   background: linear-gradient(#ff5400, transparent);
 }
+
+.photo-button {
+  color: white;
+}
