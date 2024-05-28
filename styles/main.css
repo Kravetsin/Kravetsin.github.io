@@ -83,6 +83,8 @@ hr.hr-header{
   transition: font-size 0.4s ease;
 }
 
+
+
 .icon {
   transition: opacity 0.5s, transform 0.5s;
 }
@@ -104,6 +106,15 @@ hr.hr-header{
 .toggle-button:hover{
   font-size: 50px;
   transition: 0.4s ease;
+}
+
+@media (max-width: 600px) {
+  .toggle-button:hover{
+    font-size: 35px;
+  }
+  .moon:hover {
+    font-size: 35px;
+  }
 }
 
 a {
