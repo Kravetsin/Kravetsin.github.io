@@ -46,7 +46,7 @@ a:hover::before {
 }
 
 a:hover {
-    background-color: #c3daf0;
+    background-color: #000000;
     transition: .3s;
 }
 
