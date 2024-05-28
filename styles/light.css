@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #c3daf0;
+  background-color: #cccecf;
   color: #343a40;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -13,6 +13,7 @@ header {
 section {
   background-color: #dfdfdf;
   color: #343a40;
+  box-shadow: 2px 2px 10px black;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -54,7 +55,7 @@ a:hover {
   bottom: 0;
   width: 20px;
   aspect-ratio: 1/1;
-  background: #ccd8e2;
+  background: #fdfdfd;
   box-shadow: 0 0 4px #0000009a, 0 0 20px #f3eeea, 0 0 20px #e0dcd99c,
     0 0 50px #ffffff8e;
   border-radius: 50%;
