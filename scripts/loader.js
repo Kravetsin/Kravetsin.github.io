@@ -32,14 +32,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		}, index * 500) // Увеличиваем задержку для каждой секции на 500мс
 	})
 })
-
-document.addEventListener('DOMContentLoaded', () => {
-	const sections = document.querySelectorAll('section')
-
-	sections.forEach((section, index) => {
-		setTimeout(() => {
-			section.classList.add('visible')
-		}, index * 500) // Увеличиваем задержку для каждой секции на 500мс
-	})
-})
-

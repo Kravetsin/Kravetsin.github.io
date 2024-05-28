@@ -2,29 +2,6 @@
 html {
   width: 100%;
   scroll-behavior: smooth;
-  -webkit-touch-callout: none;
-
-  /*iOS Safari*/
-
-  -webkit-user-select: none;
-
-  /*Chrome/Safari/Opera*/
-
-  -khtml-user-select: none;
-
-  /*Konqueror*/
-
-  -moz-user-select: none;
-
-  /*Firefox*/
-
-  -ms-user-select: none;
-
-  /*Internet Explorer/Edge*/
-
-  user-select: none;
-
-  /*Non-prefixed version, currently not supported by any browser*/
 }
 
 body {
@@ -167,7 +144,7 @@ a {
   }
 }
 
-/* .section {
+.section {
   opacity: 0;
   margin-left: 2%;
   margin-right: 2%;
@@ -177,7 +154,7 @@ a {
 
 .section.visible {
   animation: fadeIn 0.5s forwards;
-} */
+}
 
 @keyframes blink {
   0%, 100% {
