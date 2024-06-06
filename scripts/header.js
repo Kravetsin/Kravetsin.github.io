@@ -15,4 +15,4 @@ function lines() {
 }
 setInterval(function () {
 	lines()
-}, 300)
+}, 500)
