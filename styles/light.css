@@ -18,6 +18,7 @@ section {
 }
 
 a {
+  font-family: monospace;
   position: relative;
   text-decoration: none;
   color: black;

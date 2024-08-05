@@ -69,24 +69,34 @@ hr.hr-header{
 .toggle-button {
   z-index: 2;
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 8%;
+  right: 8%;
   cursor: pointer;
   background: none;
   border: none;
   border-radius: 50%;
-  font-size: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 0px;
   transition: font-size 0.4s ease;
 }
 
-
-
 .icon {
   transition: opacity 0.5s, transform 0.5s;
+}
+
+.icon.sun img{
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+
+.icon.moon img{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 40px;
+  padding: 10%;
+  border-radius: 100%;
 }
 
 .sun {
@@ -169,15 +179,18 @@ a {
 
 @keyframes blink {
   0%, 100% {
-    box-shadow: 10px 7px 15px white ;
+    box-shadow: 0px 0px 50px 10px rgb(255, 255, 255) ;
   }
-  50% {
-    box-shadow: 10px 10px 15px ;
+  30% {
+    box-shadow: 0px 0px 50px 20px black;
+  }
+  60% {
+    box-shadow: 0px 0px 50px 10px white;
   }
 }
 
 .blinking-button {
-  animation: blink 2s infinite;
+  animation: blink 4s infinite;
 }
 
 .lang-button {
@@ -276,6 +289,7 @@ a {
 
 .photo-button {
   z-index: 2;
+  font-family: monospace;
   position: relative;
   color: rgb(36, 39, 41);
   cursor: pointer;
@@ -286,4 +300,9 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+}
+
+.up{
+  width: 50px;
+  border-radius: 100%;
 }
