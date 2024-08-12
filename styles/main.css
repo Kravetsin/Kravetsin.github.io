@@ -165,7 +165,7 @@ a {
   }
 }
 
-.section {
+/* .section {
   opacity: 0;
   margin-left: 2%;
   margin-right: 2%;
@@ -175,7 +175,7 @@ a {
 
 .section.visible {
   animation: fadeIn 0.5s forwards;
-}
+} */
 
 @keyframes blink {
   0%, 100% {
