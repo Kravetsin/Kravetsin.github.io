@@ -21,7 +21,7 @@ header {
 section {
   padding: 20px 20px;
   border-radius: 20px;
-  margin: 10px;
+  margin: 20px;
 }
 
 hr {
@@ -165,17 +165,17 @@ a {
   }
 }
 
-/* .section {
+.section {
   opacity: 0;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.1s ease, transform 0.1s ease;
 }
 
 .section.visible {
-  animation: fadeIn 0.5s forwards;
-} */
+  animation: fadeIn 0.3s forwards;
+}
 
 @keyframes blink {
   0%, 100% {
@@ -305,4 +305,35 @@ a {
 .up{
   width: 50px;
   border-radius: 100%;
+}
+
+/* Стили для кнопки навигации */
+.nav-toggle {
+  font-family: monospace;
+  display: block;
+  margin: auto;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Стили для скрытого меню навигации */
+.nav-menu {
+  display: none; /* Меню скрыто по умолчанию */
+  flex-direction: column;
+  padding: 1em;
+}
+
+.nav-menu a {
+  margin: 0.2%;
+}
+
+.nav-toggle{
+  border-radius: 10px;
+
+  transition: 0.2s ease-out;
+}
+
+.nav-toggle:hover{
+  background-color: #aaa;
 }
