@@ -1,155 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume</title>
-  <link rel="stylesheet" href="/styles/main.css">
-  <link id="theme-style" rel="stylesheet" href="/styles/light.css">
-  <link rel="stylesheet" href="/styles/header.css">
-</head>
-<body>
-
-  <div id="loader">
-    <div class="loader-icon"></div>
-  </div>
-
-  <div class="content">
-    <button id="theme-toggle" class="toggle-button blinking-button">
-      <span class="icon sun"><img src="images/sun.png" alt=""></span>
-      <span class="icon moon" style="opacity: 0;"><img src="images/moon.png" alt=""></span>
-    </button>
-
-    <button id="lang-toggle" class="lang-button">EN</button>
-
-    <header id="header">
-      <h1 class="resume hover-effect" data-en="My Resume" data-de="Lebenslauf">My Resume</h1>
-    </header>
-
-    <hr class="hr-header">
-
-    <button id="nav-toggle" class="nav-toggle">Show Navigation</button>
-    <div class="nav-menu" id="nav-menu">
-      <a href="#about">About</a>
-      <a href="#personal"> Personal information</a>
-      <a href="#experience">Experience</a>
-      <a href="#professional experience">Professional experience</a>
-      <a href="#training">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#hobby">Hobbies</a>
-      <a href="#contact">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link id="theme-style" rel="stylesheet" href="./styles/light.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div class="loader-icon"></div>
     </div>
 
-    <hr class="hr-header">
+    <div class="content">
+      <button id="theme-toggle" class="toggle-button blinking-button">
+        <span class="icon sun"><img src="./images/sun.png" alt="" /></span>
+        <span class="icon moon" style="opacity: 0"
+          ><img src="./images/moon.png" alt=""
+        /></span>
+      </button>
 
-    <section id="about" class="section">
-      <h2 class="hover-effect" data-en="About Me" data-de="Über mich">About Me</h2>
-      <p class="hover-effect"><span data-en="Hi, my name is " data-de="Hallo, mein Name ist ">Hi, my name is </span><strong>Igor Kravets</strong><span data-en=" and I'm a self-taught front-end developer." data-de=" und ich bin ein autodidaktischer Front-End-Entwickler."> and I'm a self-taught front-end developer.</span></p>
-      <button id="photo-toggle" class="photo-button">View Photo</button>
-    </section>
+      <button id="lang-toggle" class="lang-button">EN</button>
 
-    <hr>
+      <header id="header">
+        <h1
+          class="resume hover-effect"
+          data-en="My Resume"
+          data-de="Lebenslauf"
+        >
+          My Resume
+        </h1>
+      </header>
 
-    <section id="personal" class="section">
-      <h2 class="hover-effect" data-en="Personal information" data-de="Persönliches">Persönliches</h2>
-      <li><span data-en="Date of birth" data-de="Geburtsdatum">Geburtsdatum</span>: <strong>26.04.1999</strong></li>
-      <li><span data-en="Birthplace" data-de="Geburtsort">Geburtsort</span>: Sumy, UA</li>
-      <li data-en="Marital status: Single, no children" data-de="Familienstand: Alleinstehen, keine Kinder">Familienstand: Alleinstehen, keine Kinder.</li>
-      <li><span data-en="In Germany since: May" data-de="In Deutschland seit: Mai">In D. seit: Mai</span> 2023</li>
-    </section>
+      <hr class="hr-header" />
 
-    <hr>
+      <button id="nav-toggle" class="nav-toggle">Show Navigation</button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about">About</a>
+        <a href="#personal"> Personal information</a>
+        <a href="#experience">Experience</a>
+        <a href="#professional experience">Professional experience</a>
+        <a href="#training">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#hobby">Hobbies</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-    <section id="experience" class="section">
-      <h2 class="hover-effect" data-en="Experience" data-de="Erfahrung">Experience</h2>
-      <h4 class="hover-effect">2023 - <span data-en="Today" data-de="Heute">Today</span>  (JavaScript, Python)</h4>
-      <li class="hover-effect"><span data-en="Framework" data-de="Rahmenwerk">Framework</span>  - Django</li>
-      <li class="hover-effect"><span data-en="Library" data-de="Bibliothek">Library</span>  - ReactJS</li>
-      <li class="hover-effect" data-en="Creating a database with MySQL" data-de="Erstellen einer Datenbank mit MySQL"></li>
-      <li class="hover-effect" data-en="Parser / Telegram bot, using technologies: BeautifulSoup, Selenium, Google Translation API, TelegramBotAPI" data-de="Parser / Telegram-Bot, mit Technologien: BeautifulSoup, Selenium, Google Translation API, TelegramBotAPI"></li>
-      <h4>2022 - 2023 (HTML, CSS)</h4>
-      <li class="hover-effect" data-en="Learning the basics of programming languages" data-de="Erlernen der Grundlagen von Programmiersprache">Learning the basics of programming languages.</li>
-      <li class="hover-effect" data-en="Creation of a website" data-de="Erstellung einer Website">Creation of a website.</li>
-    </section>
+      <hr class="hr-header" />
 
-    <hr>
+      <section id="about" class="section">
+        <h2 class="hover-effect" data-en="About Me" data-de="Über mich">
+          About Me
+        </h2>
+        <p class="hover-effect">
+          <span data-en="Hi, my name is " data-de="Hallo, mein Name ist "
+            >Hi, my name is </span
+          ><strong>Igor Kravets</strong
+          ><span
+            data-en=" and I'm a self-taught front-end developer."
+            data-de=" und ich bin ein autodidaktischer Front-End-Entwickler."
+          >
+            and I'm a self-taught front-end developer.</span
+          >
+        </p>
+        <button id="photo-toggle" class="photo-button">View Photo</button>
+      </section>
 
-    <section id="professional experience" class="section">
-      <h2 class="hover-effect" data-en="Professional experience" data-de="Berufspraxis">Professional experience</h2>
-      <h4>01/2023 - 04/2023 Vishay Electronic, Blatná (CZ)</h4>
-      <li data-en="Factory employee" data-de="Fabrikmitarbeiterin">Fabrikmitarbeiterin</li>
-      <li data-en="Carrying out soldering work" data-de="Durchführung von Lötarbeiten">Durchführung von Lötarbeiten</li>
-      <h4>01/2022 - 12/2022 Tabor (CZ)</h4>
-      <li data-en="Factory employee" data-de="Fabrikmitarbeiterin">Fabrikmitarbeiterin</li>
-      <li data-en="Sorting and palletizing cans" data-de="Sortieren und Palettieren von Dosen">Sortieren und Palettieren von Dosen</li>
-      <h4>07/2021 - 08/2021 Hlukhiv (UA)</h4>
-      <li data-en="Service staff in a pizzeria" data-de="Servicekraft in einer Pizzeria">Servicekraft in einer Pizzeria</li>
-    </section>
+      <hr />
 
-    <hr>
+      <section id="personal" class="section">
+        <h2
+          class="hover-effect"
+          data-en="Personal information"
+          data-de="Persönliches"
+        >
+          Persönliches
+        </h2>
+        <li>
+          <span data-en="Date of birth" data-de="Geburtsdatum"
+            >Geburtsdatum</span
+          >: <strong>26.04.1999</strong>
+        </li>
+        <li>
+          <span data-en="Birthplace" data-de="Geburtsort">Geburtsort</span>:
+          Sumy, UA
+        </li>
+        <li
+          data-en="Marital status: Single, no children"
+          data-de="Familienstand: Alleinstehen, keine Kinder"
+        >
+          Familienstand: Alleinstehen, keine Kinder.
+        </li>
+        <li>
+          <span
+            data-en="In Germany since: May"
+            data-de="In Deutschland seit: Mai"
+            >In D. seit: Mai</span
+          >
+          2023
+        </li>
+      </section>
 
-    <section id="training" class="section">
-      <h2 class="hover-effect" data-en="Education" data-de="Ausbildung">Training</h2>
-      <h4>2018 - 2020 Sumy National Agrarian University</h4>
-      <li data-en="Bachelor" data-de="Bachelor">Bachelor.</li>
-      <li data-en="Agricultural engineer" data-de="Agrar-Ingenieur">Agrar-Ingenieur.</li>
-      <h4>2014 - 2018 Hlukhiv Agrotechnical Professional College of SNAU</h4>
-      <li data-en="Junior specialist for electrical engineering" data-de="Junior-Fachkraft für Elektrotechnik">Junior-Fachkraft für Elektrotechnik.</li>
-    </section>
+      <hr />
 
-    <hr>
+      <section id="experience" class="section">
+        <h2 class="hover-effect" data-en="Experience" data-de="Erfahrung">
+          Experience
+        </h2>
+        <h4 class="hover-effect">
+          2023 - <span data-en="Today" data-de="Heute">Today</span> (JavaScript,
+          Python)
+        </h4>
+        <li class="hover-effect">
+          <span data-en="Framework" data-de="Rahmenwerk">Framework</span> -
+          Django
+        </li>
+        <li class="hover-effect">
+          <span data-en="Library" data-de="Bibliothek">Library</span> - ReactJS
+        </li>
+        <li
+          class="hover-effect"
+          data-en="Creating a database with MySQL"
+          data-de="Erstellen einer Datenbank mit MySQL"
+        ></li>
+        <li
+          class="hover-effect"
+          data-en="Parser / Telegram bot, using technologies: BeautifulSoup, Selenium, Google Translation API, TelegramBotAPI"
+          data-de="Parser / Telegram-Bot, mit Technologien: BeautifulSoup, Selenium, Google Translation API, TelegramBotAPI"
+        ></li>
+        <h4>2022 - 2023 (HTML, CSS)</h4>
+        <li
+          class="hover-effect"
+          data-en="Learning the basics of programming languages"
+          data-de="Erlernen der Grundlagen von Programmiersprache"
+        >
+          Learning the basics of programming languages.
+        </li>
+        <li
+          class="hover-effect"
+          data-en="Creation of a website"
+          data-de="Erstellung einer Website"
+        >
+          Creation of a website.
+        </li>
+      </section>
 
-    <section id="skills" class="section">
-      <h2 class="hover-effect" data-en="Knowledge and interests" data-de="Kenntnisse und interessen">Knowledge and interests</h2>
-      <p class="hover-effect"><span data-en="Programming language: " data-de="Programmiersprache: ">Programming language: </span>HTML, CSS, JavaScript, Python</p>
-      <p class="hover-effect" data-en="Languages: German - B1; English - B2; Ukrainian/Russian - Mother tongue" data-de="Sprachen: Deutsch - B1; Englisch - B2;
-      Ukrainisch/Russisch - Muttersprache">Languages: German - B1; English - B2; Ukrainian/Russian - Mother tongue.</p>
-      <p class="hover-effect" data-en="Neural Networks: ChatGPT, Midjourney, StableDiffusion - very good knowledge" data-de="Neuronale Netze: ChatGPT, Midjourney, StableDiffusion - sehr gute Kenntnisse">Neural Networks: ChatGPT, Midjourney, StableDiffusion - very good knowledge.</p>
-    </section>
+      <hr />
 
-    <hr>
+      <section id="professional experience" class="section">
+        <h2
+          class="hover-effect"
+          data-en="Professional experience"
+          data-de="Berufspraxis"
+        >
+          Professional experience
+        </h2>
+        <h4>01/2023 - 04/2023 Vishay Electronic, Blatná (CZ)</h4>
+        <li data-en="Factory employee" data-de="Fabrikmitarbeiterin">
+          Fabrikmitarbeiterin
+        </li>
+        <li
+          data-en="Carrying out soldering work"
+          data-de="Durchführung von Lötarbeiten"
+        >
+          Durchführung von Lötarbeiten
+        </li>
+        <h4>01/2022 - 12/2022 Tabor (CZ)</h4>
+        <li data-en="Factory employee" data-de="Fabrikmitarbeiterin">
+          Fabrikmitarbeiterin
+        </li>
+        <li
+          data-en="Sorting and palletizing cans"
+          data-de="Sortieren und Palettieren von Dosen"
+        >
+          Sortieren und Palettieren von Dosen
+        </li>
+        <h4>07/2021 - 08/2021 Hlukhiv (UA)</h4>
+        <li
+          data-en="Service staff in a pizzeria"
+          data-de="Servicekraft in einer Pizzeria"
+        >
+          Servicekraft in einer Pizzeria
+        </li>
+      </section>
 
-    <section id="portfolio" class="section">
-      <h2>Portfolio</h2>
-      <a href="https://github.com/Kravetsin?tab=repositories" target="_blank">GitHub</a>
-    </section>
+      <hr />
 
-    <hr>
+      <section id="training" class="section">
+        <h2 class="hover-effect" data-en="Education" data-de="Ausbildung">
+          Training
+        </h2>
+        <h4>2018 - 2020 Sumy National Agrarian University</h4>
+        <li data-en="Bachelor" data-de="Bachelor">Bachelor.</li>
+        <li data-en="Agricultural engineer" data-de="Agrar-Ingenieur">
+          Agrar-Ingenieur.
+        </li>
+        <h4>2014 - 2018 Hlukhiv Agrotechnical Professional College of SNAU</h4>
+        <li
+          data-en="Junior specialist for electrical engineering"
+          data-de="Junior-Fachkraft für Elektrotechnik"
+        >
+          Junior-Fachkraft für Elektrotechnik.
+        </li>
+      </section>
 
-    <section id="hobby" class="section">
-      <h2 class="hover-effect" data-en="Hobbies" data-de="Hobbys">Hobbies</h2>
-      <p class="hover-effect" data-en="Making music, programming, building computers, streaming, video editing, computer gaming" data-de="Musik machen, Programmierung, Computer bauen, Streaming, Videobearbeitung, Computerspiele">Making music, programming, building computers, streaming, video editing, computer gaming</p>
-      <a target="_blank" href="https://soundcloud.com/kravetsin">SoundCloud</a>
-    </section>
+      <hr />
 
-    <hr>
+      <section id="skills" class="section">
+        <h2
+          class="hover-effect"
+          data-en="Knowledge and interests"
+          data-de="Kenntnisse und interessen"
+        >
+          Knowledge and interests
+        </h2>
+        <p class="hover-effect">
+          <span data-en="Programming language: " data-de="Programmiersprache: "
+            >Programming language: </span
+          >HTML, CSS, JavaScript, Python
+        </p>
+        <p
+          class="hover-effect"
+          data-en="Languages: German - B1; English - B2; Ukrainian/Russian - Mother tongue"
+          data-de="Sprachen: Deutsch - B1; Englisch - B2;
+      Ukrainisch/Russisch - Muttersprache"
+        >
+          Languages: German - B1; English - B2; Ukrainian/Russian - Mother
+          tongue.
+        </p>
+        <p
+          class="hover-effect"
+          data-en="Neural Networks: ChatGPT, Midjourney, StableDiffusion - very good knowledge"
+          data-de="Neuronale Netze: ChatGPT, Midjourney, StableDiffusion - sehr gute Kenntnisse"
+        >
+          Neural Networks: ChatGPT, Midjourney, StableDiffusion - very good
+          knowledge.
+        </p>
+      </section>
 
-    <section id="contact" class="section">
-      <h2 class="hover-effect" data-en="Contact" data-de="Kontakt">Contact</h2>
-      <p>➤ Goldbergstr. 1, 35043 Marburg</p>
-      <p>✉︎ <a href="mailto:kravets.inside@gmail.com">kravets.inside@gmail.com</a></p>
-      <p>✆ <a href="tel:+4916091497274">+4916091497274</a></p>
-    </section>
-  </div>
+      <hr />
 
-  <div id="photo-modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img src="/images/IMG_0287.JPG" alt="Resume Photo" class="modal-photo">
+      <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <a href="https://github.com/Kravetsin?tab=repositories" target="_blank"
+          >GitHub</a
+        >
+      </section>
+
+      <hr />
+
+      <section id="hobby" class="section">
+        <h2 class="hover-effect" data-en="Hobbies" data-de="Hobbys">Hobbies</h2>
+        <p
+          class="hover-effect"
+          data-en="Making music, programming, building computers, streaming, video editing, computer gaming"
+          data-de="Musik machen, Programmierung, Computer bauen, Streaming, Videobearbeitung, Computerspiele"
+        >
+          Making music, programming, building computers, streaming, video
+          editing, computer gaming
+        </p>
+        <a target="_blank" href="https://soundcloud.com/kravetsin"
+          >SoundCloud</a
+        >
+      </section>
+
+      <hr />
+
+      <section id="contact" class="section">
+        <h2 class="hover-effect" data-en="Contact" data-de="Kontakt">
+          Contact
+        </h2>
+        <p>➤ Goldbergstr. 1, 35043 Marburg</p>
+        <p>
+          ✉︎
+          <a href="mailto:kravets.inside@gmail.com">kravets.inside@gmail.com</a>
+        </p>
+        <p>✆ <a href="tel:+4916091497274">+4916091497274</a></p>
+      </section>
     </div>
-  </div>
 
-  <div>
-    <a class="go-up" href="#header"><img class="up" src="images/up.gif" alt=""></a>
-  </div>
+    <div id="photo-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="./images/IMG_0287.JPG"
+          alt="Resume Photo"
+          class="modal-photo"
+        />
+      </div>
+    </div>
 
-  <script src="/scripts/theme-toggle.js"></script>
-  <script src="/scripts/loader.js"></script>
-  <script src="/scripts/header.js"></script>
-  <script src="/scripts/touch.js"></script>
-  <script src="/scripts/lang-toggle.js"></script>
-  <script src="/scripts/photo-modal.js"></script>
-  <script src="/scripts/nav-menu.js"></script>
-</body>
+    <div>
+      <a class="go-up" href="#header"
+        ><img class="up" src="./images/up.gif" alt=""
+      /></a>
+    </div>
+
+    <script src="./scripts/theme-toggle.js"></script>
+    <script src="./scripts/loader.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/touch.js"></script>
+    <script src="./scripts/lang-toggle.js"></script>
+    <script src="./scripts/photo-modal.js"></script>
+    <script src="./scripts/nav-menu.js"></script>
+  </body>
 </html>

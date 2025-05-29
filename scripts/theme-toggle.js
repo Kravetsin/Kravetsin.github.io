@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const moonIcon = document.querySelector('.moon')
 
 	const currentTheme = localStorage.getItem('theme') || 'light'
-	themeStyle.setAttribute('href', `/styles/${currentTheme}.css`)
+	themeStyle.setAttribute('href', `./styles/${currentTheme}.css`)
 	sunIcon.style.opacity = currentTheme === 'dark' ? 0 : 1
 	sunIcon.style.transform =
 		currentTheme === 'dark' ? 'rotate(360deg)' : 'rotate(0deg)'
@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Функция переключения темы
 	function toggleTheme() {
 		const theme =
-			themeStyle.getAttribute('href') === '/styles/light.css' ? 'dark' : 'light'
-		themeStyle.setAttribute('href', `/styles/${theme}.css`)
+			themeStyle.getAttribute('href') === './styles/light.css' ? 'dark' : 'light'
+		themeStyle.setAttribute('href', `./styles/${theme}.css`)
 		localStorage.setItem('theme', theme)
 		sunIcon.style.opacity = theme === 'dark' ? 0 : 1
 		sunIcon.style.transform =
