@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+:root {
+  --container-padding: 15px;
+}
