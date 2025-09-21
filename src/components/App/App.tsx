@@ -1,8 +1,9 @@
 import "./App.module.css";
 import "../../types/test";
 import { useState } from "react";
-import Accordion from "./Accordion";
-import TagManager from "./TagManager";
+import Accordion from "../Accordion";
+import TagManager from "../TagManager";
+import OrderForm from "../OrderForm";
 
 const items = [
   {
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <div>
+      <OrderForm />
       <TagManager />
       <Accordion items={items} />
       <button onClick={handleVisibility}>Set Visibility</button>

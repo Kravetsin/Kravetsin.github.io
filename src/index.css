@@ -3,3 +3,12 @@
 :root {
   --container-padding: 15px;
 }
+
+input {
+  border: 1px solid black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
